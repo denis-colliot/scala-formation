@@ -1,12 +1,11 @@
 package tp9.actors
 
-import akka.actor.Actor
-import tp9.pingpong.Msg.{HaltMsg, PingMsg, PongMsg, UnknownMsg}
+import tp9.pingpong.Msg.{HaltMsg, PingMsg, PongMsg}
 
 /**
   * Created by zenika on 20/05/16.
   */
-class Pong extends Actor {
+class Pong extends AbstractActor {
 
   var compteur: Int = 0
 
@@ -22,7 +21,6 @@ class Pong extends Actor {
         sender() ! HaltMsg
       }
     }
-    case _ => sender() ! UnknownMsg
   }
 
 }

@@ -13,6 +13,4 @@ object Msg {
 
   case class HaltMsg() {}
 
-  case class UnknownMsg() {}
-
 }
