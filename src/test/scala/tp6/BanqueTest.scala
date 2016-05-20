@@ -44,8 +44,5 @@ class BanqueTest extends FunSuite {
 
   // 6.2
 
-  test("Percentage(100,50) should return 50") {
-    // FIXME assert(banque.agios(new Compte(100, 1)) == 0.5)
-  }
 
 }
